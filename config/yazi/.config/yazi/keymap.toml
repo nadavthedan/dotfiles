@@ -1,0 +1,25 @@
+[[manager.prepend_keymap]]
+on = ["g", "z"]
+run = "plugin zoxide"
+desc = "Jump to a directory using zoxide"
+
+[[manager.prepend_keymap]]
+on = ["C-f"]
+run = "plugin fzf"
+desc = "Fuzzy find files"
+
+[[manager.prepend_keymap]]
+on = ["T"]
+run = "shell 'tmux new-window -c \"$PWD\"'"
+desc = "Open new Tmux window in current directory"
+
+# Toggle visibility of hidden files
+[[manager.prepend_keymap]]
+on = ["."]
+run = "reveal"
+desc = "Toggle hidden files"
+
+[[manager.prepend_keymap]]
+on = ["Q"]
+run = "quit --cwd-file"
+desc = "Quit Yazi and change the shell's working directory"

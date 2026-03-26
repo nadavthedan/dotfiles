@@ -1,1 +1,0 @@
-/home/palindrome/.config/omarchy/current/theme/neovim.lua

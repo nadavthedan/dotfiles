@@ -16,7 +16,7 @@ CORE_TUI=(
 
 HYPR_ECOSYSTEM=(
   hyprland xdg-desktop-portal-hyprland
-  waybar walker
+  waybar
   wl-clipboard cliphist
   grim slurp
   hyprpolkitagent

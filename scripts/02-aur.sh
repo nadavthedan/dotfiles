@@ -16,6 +16,7 @@ fi
 # 2. Define AUR Packages
 AUR_PACKAGES=(
   # The Must-Haves
+  walker-bin
   hyprshot
   ttf-jetbrains-mono-nerd
 

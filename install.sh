@@ -33,9 +33,17 @@ STOW_PACKAGES=(
 # Loop through and stow each package
 for package in "${STOW_PACKAGES[@]}"; do
   echo "Stowing $package..."
-  # -d: source directory (where the folders are)
-  # -t: target directory (where to symlink them)
-  # -R: restow (recursive/overwrite)
+
+  # Force removal of existing files that conflict with stow
+  # This specifically looks for real files (not symlinks) and deletes them
+  # so stow can place its symlinks instead.
+  stow -d "$CONFIG_DIR" -t "$HOME" --adopt "$package"
+
+  # Reset any changes stow made to our dotfiles repo during --adopt
+  cd "$CONFIG_DIR/$package" && git checkout . || true
+  cd "$DOTFILES_DIR"
+
+  # Now restow normally
   stow -d "$CONFIG_DIR" -t "$HOME" -R "$package"
 done
 

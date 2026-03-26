@@ -16,6 +16,18 @@ fi
 # 2. Define AUR Packages
 AUR_PACKAGES=(
   # The Must-Haves
+  elephant-desktopapplications
+  elephant-runner
+  elephant-files
+  elephant-websearch
+  elephant-calculator
+  elephant-clipboard
+  elephant-symbols
+  elephant-bluetooth
+  elephant-windows
+  elephant-archlinuxpkgs
+  elephant-todo
+  elephant-bookmarks
   walker-bin
   hyprshot
   ttf-jetbrains-mono-nerd

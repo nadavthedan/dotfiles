@@ -9,7 +9,7 @@ sudo pacman -Syu --noconfirm
 
 # 2. Package Groups
 CORE_TUI=(
-  git curl wget ripgrep fd fzf tmux neovim
+  git github-cli curl wget ripgrep fd fzf tmux neovim
   eza zoxide yazi lazygit lazydocker zsh
   bat btop gdu nmap stow
 )

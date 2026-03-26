@@ -23,6 +23,11 @@ STOW_PACKAGES=(
   nvim
   hypr
   yazi
+  kitty
+  qutebrowser
+  walker
+  waybar
+  zsh
 )
 
 # Loop through and stow each package
